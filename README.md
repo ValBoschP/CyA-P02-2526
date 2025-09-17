@@ -91,3 +91,11 @@ aloh
 ```
 
 En relación a los resultados anteriores, téngase en cuenta que las cadenas de los conjuntos se están mostrando de forma ordenada en relación a la longitud de las mismas. El resultado sería diferente si se hubiera optar por hacer una ordenación basada en la comparación alfanumérica de las cadenas.
+
+## Guión de la práctica
+Para ver más detalles sobre la práctica, consulte el guión situado en:
+[Guión de la práctica 2](./docs/CyA_2025_2026_P2.pdf)
+```
+./docs/CyA_2025_2026_P2.pdf
+```
+
