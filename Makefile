@@ -1,7 +1,7 @@
 NAME = Valeria
 SURNAME = BoschPerez
-PROJECT_NAME = CyA-PX-2526
-PRACTICE = pX
+PROJECT_NAME = CyA-P02-2526
+PRACTICE = p02
 
 DIR_PATH=$(shell realpath .)
 DIR_NAME=$(shell basename $(DIR_PATH))

@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.15 FATAL_ERROR)
-set(PROJECT_NAMESPACE "CyA-PX-2526")
-project("CyA-PX-2526"
+set(PROJECT_NAMESPACE "CyA-P02-2526")
+project("CyA-P02-2526"
 	VERSION 1.0.0
-	DESCRIPTION "CyA: Práctica X - Descripción"
+	DESCRIPTION "CyA: Práctica 2 - Cadenas y lenguajes"
 	LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")

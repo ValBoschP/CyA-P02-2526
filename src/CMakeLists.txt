@@ -1,6 +1,6 @@
 project(${CMAKE_PROJECT_NAME})
 
-set(EXE_NAME "pX_exec")
+set(EXE_NAME "p02_strings")
 
 file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "*.cc")
 list(REMOVE_ITEM SOURCES "main.cc")
