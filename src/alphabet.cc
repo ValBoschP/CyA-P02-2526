@@ -34,7 +34,7 @@ std::string Alphabet::GetStringAlphabet() const {
   return alphabet.str();
 }
 
-std::ostream&operator<<(std::ostream os, const Alphabet& alphabet) {
+std::ostream& operator<<(std::ostream& os, const Alphabet& alphabet) {
   if (alphabet.IsEmpty()) {
     os << "The alphabet cannot be empty";
     return os;

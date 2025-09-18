@@ -14,18 +14,14 @@
  * 18/09/2025 - Creación (primera versión) del código
  */
 
-#include "string.h"
-
 #include <algorithm>
+
+#include "string.h"
 
 String::String(const std::string& string, const std::string& alphabet) : string_(string) {
   for (const auto& symbol : alphabet) {
     alphabet_.AddSymbol(symbol);
   }
-}
-
-std::string String::GetStringAlphabet() const {
-  return alphabet_.GetStringAlphabet();
 }
 
 int String::Length() const {
@@ -48,7 +44,7 @@ std::set<std::string> String::Prefixes() const {
   std::set<std::string> result;
   std::string prefix;
   if (string_ == "&") {
-    prefixes.insert("");
+    result.insert("");
     return result;
   }
   result.insert("&");
