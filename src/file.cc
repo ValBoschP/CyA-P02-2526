@@ -6,12 +6,12 @@
  * Práctica 2: Cadenas y lenguajes
  * Autor: Valeria Bosch Pérez
  * Correo: alu0101485287@ull.edu.es
- * Fecha: 18/09/2024
+ * Fecha: 18/09/2025
  * Archivo file.cc: Implementación de funciones para archivos.
  * Este archivo contiene la implementación de las funciones que realizan la lectura y escritura.
  * Referencias:
  * Historial de revisiones:
- * 18/09/2024 - Creación (primera versión) del código
+ * 18/09/2025 - Creación (primera versión) del código
  */
 
 
@@ -24,12 +24,12 @@ const char SPACE = ' ';
 
 /**
  * @brief Checks if a string is printable ASCII.
- * @param str String to check.
+ * @param string String to check.
  * @return true If the string is printable ASCII.
  * @return false If the string is not printable ASCII.
  */
-bool IsPrintableASCII(const std::string& str) {
-  for (char ch : str) {
+bool IsPrintableASCII(const std::string& string) {
+  for (char ch : string) {
     if (!std::isprint(static_cast<unsigned char>(ch))) return false;
   }
   return true;
@@ -47,15 +47,15 @@ std::vector<String> ReadInputFile(const std::string& input_file) {
   int string_counter = 1;
   while (std::getline(infile, line)) {
     int space = line.find(SPACE);
-    std::string str = line.substr(0, space);
+    std::string string = line.substr(0, space);
     std::string alphabet = line.substr(space + 1);
-    str.erase(std::remove(str.begin(), str.end(), '&'), str.end());
-    if (!IsPrintableASCII(str)) {
+    string.erase(std::remove(string.begin(), string.end(), '&'), string.end());
+    if (!IsPrintableASCII(string)) {
       std::cerr << "WARNING: String " << string_counter << " is not printable ASCII." << std::endl;
       std::cerr << "The string has been omitted." << std::endl;
       continue;
     }
-    cadenas.emplace_back(String(str, alphabet));
+    cadenas.emplace_back(String(string, alphabet));
     ++string_counter;
   }
   return cadenas;
