@@ -27,6 +27,10 @@
 
 class Language; // Forward declaration
 
+/**
+ * @class String
+ * @brief Represents a string with an associated alphabet and provides various operations.
+ */
 class String {
  public:
   // -- CONSTRUCTORS --
