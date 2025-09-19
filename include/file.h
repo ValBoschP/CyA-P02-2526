@@ -23,8 +23,8 @@
 #include <string>
 #include <vector>
 
-bool IsASCIIString(const std::string& str);
-std::vector<Cadena> ReadInputFile(const std::string& input_file);
+bool IsPrintableASCII(const std::string& str);
+std::vector<String> ReadInputFile(const std::string& input_file);
 void WriteOutputFile(const std::string& output_file,
            const std::vector<std::string>& results);
 

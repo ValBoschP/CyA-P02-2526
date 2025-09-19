@@ -28,7 +28,7 @@ const char SPACE = ' ';
  * @return true If the string is printable ASCII.
  * @return false If the string is not printable ASCII.
  */
-bool IsASCIIString(const std::string& str) {
+bool IsPrintableASCII(const std::string& str) {
   for (char ch : str) {
     if (!std::isprint(static_cast<unsigned char>(ch))) return false;
   }
