@@ -23,6 +23,14 @@
 
 #include <set>
 
+/**
+ * @class Language
+ * @brief Represents a formal language as a set of strings (String).
+ *
+ * The Language class provides methods to manipulate formal languages,
+ * allowing operations such as union, intersection, difference, and concatenation
+ * between languages. Each language is internally represented as a set of String objects.
+ */
 class Language {
  public:
   // -- CONSTRUCTORS --
