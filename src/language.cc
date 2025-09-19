@@ -1,3 +1,19 @@
+/* Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Asignatura: Computabilidad y Algoritmia
+ * Curso: 2º
+ * Práctica 2: Cadenas y lenguajes
+ * Autor: Valeria Bosch Pérez
+ * Correo: alu0101485287@ull.edu.es
+ * Fecha: 18/09/2025
+ * Archivo lenguaje.cc: Implementación de los métodos de la clase Cadena.
+ * Este archivo contiene la implementación de los métodos de la clase Cadena.
+ * Referencias:
+ * Historial de revisiones:
+ * 18/09/2025 - Creación (primera versión) del código
+ */
+
 #include "language.h"
 #include "string.h"
 
