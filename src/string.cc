@@ -182,13 +182,56 @@ bool String::BelongsToAlphabet() const {
 /**
  * @brief Compares this String object with another for lexicographical order.
  *
+ * Determines if the current String object is lexicographically less than the specified String.
+ *
+ * @param string The String object to compare with.
+ * @return true if this String is less than the given String, false otherwise.
+ */
+bool String::operator<(const String& string) const {
+  if(Length() < string.Length()) return true;
+  if(Length() == string.Length()) return string_ < string.string_;
+  return false;
+}
+
+/**
+ * @brief Compares this String object with another for lexicographical order.
+ *
+ * Determines if the current String object is lexicographically less than or equal to the specified String.
+ *
+ * @param string The String object to compare with.
+ * @return true if this String is less than or equal to the given String, false otherwise.
+ */
+bool String::operator<=(const String& string) const {
+  if(Length() < string.Length()) return true;
+  if(Length() == string.Length()) return string_ <= string.string_;
+  return false;
+}
+
+/**
+ * @brief Compares this String object with another for lexicographical order.
+ * 
+ * Determines if the current String object is lexicographically greater than the specified String.
+ *
+ * @param string The String object to compare with.
+ * @return true if this String is greater than the given String, false otherwise.
+ */
+bool String::operator>(const String& string) const {
+  if(Length() > string.Length()) return true;
+  if(Length() == string.Length()) return string_ > string.string_;
+  return false;
+}
+/**
+ * @brief Compares this String object with another for lexicographical order.
+ *
  * Determines if the current String object is lexicographically greater than the specified String.
  *
  * @param string The String object to compare with.
  * @return true if this String is greater than the given String, false otherwise.
  */
 bool String::operator>=(const String& string) const {
-  return string_ >= string.string_;
+  if(Length() > string.Length()) return true;
+  if(Length() == string.Length()) return string_ >= string.string_;
+  return false;
 }
 
 /**
