@@ -18,7 +18,7 @@
 #ifndef FILE_H
 #define FILE_H
 
-#include "cadena.h"
+#include "string.h"
 
 #include <string>
 #include <vector>
